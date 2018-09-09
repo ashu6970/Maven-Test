@@ -18,6 +18,7 @@
     <maven.compiler.target>1.7</maven.compiler.target>
     <seleniumhq>3.14.0</seleniumhq>
     <webdrivermanager.version>3.0.0</webdrivermanager.version>
+    <TestNG.version>6.14.3</TestNG.version>
     
   </properties>
 
@@ -26,16 +27,68 @@
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
      <version>${seleniumhq}</version>
-</dependency>
+   </dependency>
 
-<dependency>
+   <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
     <version>${webdrivermanager.version}</version>
     <scope>test</scope>
-</dependency>
+   </dependency>
 
+    <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>${TestNG.version}</version>
+    <scope>test</scope>
+    
+</dependency>
   </dependencies>
 
+
+
+ <build>
+ 	<plugins>
+ 		 <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>1.6</version>
+        <executions>
+          <execution>
+            <phase>compile</phase>
+            <configuration>
+            
+             <tasks name="runtheapp">
+             <!--  property name="compile_classpath" refid="maven.compile.classpath"/>
+            <property name="runtime_classpath" refid="maven.runtime.classpath"/>
+            <property name="test_classpath" refid="maven.test.classpath"/>
+            <property name="plugin_classpath" refid="maven.plugin.classpath"/>
+
+                <echo message="compile classpath: ${compile_classpath}"/>
+                
+                
+                <echo message="runtime classpath: ${runtime_classpath}"/>
+                <echo message="test classpath:    ${test_classpath}"/>
+                <echo message="plugin classpath:  ${plugin_classpath}"/-->
+                
+                <ant antfile="build.xml"/>
+               
+               
+            <exec  
+              dir="${basedir}"  
+              executable="${basedir}/testrunner.bat"  
+              failonerror="true">  
+              <arg line=""/>  
+            </exec> 
+             
+			</tasks>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+ 	</plugins>
+ </build> 
   
 </project>

@@ -11,7 +11,7 @@
 	<property name="ws.jars" value="${user.home}/.m2/repository/"/>
     <property name="test.dest" value="${ws.home}/build"/>
     <property name="test.src" value="${ws.home}/src"/>
-	<property name="test.reportsDir" value="C:/ash"/>
+	<property name="test.reportsDir" value="C:/Users/Ashwin/Music"/>
 
 	
 
@@ -21,7 +21,7 @@
 	    <pathelement location="${test.dest}"/>
 
 	    <fileset dir="${ws.jars}">
-	      <include name="*.jar"/>
+	      <include name="**/*.jar"/>
 	    </fileset>
 
 	  </path>
@@ -64,7 +64,7 @@
     <!-- compile -->
     <target name="compile" depends="init, clean" > 
 		<delete includeemptydirs="true" quiet="true">
-            <fileset dir="${test.dest}" includes="**/*"/>
+            <fileset dir="${test.dest}" includes="**/*.jar"/>
 		</delete>
         <echo message="making directory..."/>
 		<mkdir dir="${test.dest}"/>
@@ -98,41 +98,19 @@
 	</path>
 	
 	  
-	
-	<target name="run" >  
-		<delete includeemptydirs="true" quiet="true">
-		            <fileset dir="${test.reportsDir}" includes="**/*"/>
-				</delete>
-			    <java jar="${ws.jars}" fork="true" spawn="true" />  
-			    <junit fork="yes" haltonfailure="no" printsummary="yes">
-				    <classpath refid="test.run" />  
+	 <!-- run -->
+	    <target name="run" depends="compile">
+	    	<!--
+	        <testng classpath="${test.classpath}:${test.dest}" suitename="suite1">	
+	            <xmlfileset dir="${ws.home}" includes="testng.xml"/>
+	        </testng>
+	        -->
+	        <testng classpathref="${test.classpath}:${test.dest}" groups="fast">
+	            <classfileset dir="${test.dest}" includes="FirstTest/AppTest.class"/>
+	        </testng>
+	       
+	    </target>
 
-			      <!--  <classpath ="${test.classpath}"/> -->  
-			    <batchtest  todir="${test.reportsDir}" fork="true">  
-			    <fileset dir="${test.dest}">  
-			       
-			  <!--include name="tests/LoginTest.class" />
-			 <include name="tests/Parameterized_Test.class" />
-			 <include name="tests/TestApplication.class" /-->
-			  <include name="com/testing/GoogleTest.class" />
-			  <include name="com/testing/YahooTest.class" />
-
-
-
-			        
-			         
-			    </fileset>  
-			    </batchtest>    
-			        <formatter type="xml" />  
-				    <classpath refid="testcase.path" />  
-			</junit>  
-			    <junitreport todir="${test.reportsDir}">    
-			        <fileset dir="${test.reportsDir}">  
-			            <include name="TEST-*.xml" />  
-			        </fileset>  
-			        <report todir="${test.reportsDir}" />  
-			    </junitreport>  
-			</target>
-
+	    
 	
 </project>

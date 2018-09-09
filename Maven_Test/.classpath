@@ -36,4 +36,7 @@
   <classpathentry kind="var" path="M2_REPO/org/rauschig/jarchivelib/0.8.0/jarchivelib-0.8.0.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-compress/1.14/commons-compress-1.14.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/testng/testng/6.14.3/testng-6.14.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/beust/jcommander/1.72/jcommander-1.72.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar"/>
 </classpath>
