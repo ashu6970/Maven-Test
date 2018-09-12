@@ -15,6 +15,7 @@ public class AppTest
 	    {
 	    	WebDriverManager.chromedriver().setup();
 	    	WebDriver driver=new ChromeDriver();
+	    	driver.get("https://www.healthie.in");
 	    }
     
 }
