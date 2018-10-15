@@ -1,0 +1,59 @@
+1537496857382	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Ashwin\\AppData\\Local\\Temp\\rust_mozprofile.3wSAOOZWDVos"
+1537496861862	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: ["XPIProvider", "XPIInternal"]
+1537496861874	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: ["LightweightThemeManager"]
+1537496861943	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/GMPProvider.jsm
+1537496861951	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/PluginProvider.jsm
+1537496861953	addons.manager	DEBUG	Starting provider: XPIProvider
+1537496861956	addons.xpi	DEBUG	startup
+1537496861962	addons.xpi	INFO	SystemAddonLocation scanning directory C:\Users\Ashwin\AppData\Local\Temp\rust_mozprofile.3wSAOOZWDVos\features\{79d86b69-9394-434e-b977-b86fdcf3c528}
+1537496861964	addons.xpi	DEBUG	checkForChanges
+1537496861965	addons.xpi	DEBUG	Loaded add-on state: {"app-profile":{"addons":{"search-nudges@shield.mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1537440455651,"path":"search-nudges@shield.mozilla.org.xpi","runInSafeMode":false,"signedState":4,"telemetryKey":"search-nudges%40shield.mozilla.org:1.8.2","version":"1.8.2"}},"staged":{},"path":"C:\\Users\\Ashwin\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\vulcci0n.learning\\extensions"},"app-system-addons":{"addons":{"fxmonitor@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1537440700053,"path":"fxmonitor@mozilla.org.xpi","runInSafeMode":true,"signedState":3,"telemetryKey":"fxmonitor%40mozilla.org:2.2","version":"2.2","type":"webextension"},"telemetry-coverage-bug1487578@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1537440700080,"path":"telemetry-coverage-bug1487578@mozilla.org.xpi","runInSafeMode":true,"signedState":3,"telemetryKey":"telemetry-coverage-bug1487578%40mozilla.org:7.0","version":"7.0"}},"staged":{},"path":"C:\\Users\\Ashwin\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\vulcci0n.learning\\features\\{79d86b69-9394-434e-b977-b86fdcf3c528}"},"app-system-defaults":{"addons":{"activity-stream@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1537413892971,"path":"activity-stream@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"activity-stream%40mozilla.org:2018.08.22.1219-93becf29","version":"2018.08.22.1219-93becf29"},"aushelper@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1537413892876,"path":"aushelper@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"aushelper%40mozilla.org:2.0","version":"2.0"},"firefox@getpocket.com":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1537413892861,"path":"firefox@getpocket.com.xpi","runInSafeMode":true,"telemetryKey":"firefox%40getpocket.com:1.0.5","version":"1.0.5"},"formautofill@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1537413892826,"path":"formautofill@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"formautofill%40mozilla.org:1.0","version":"1.0"},"onboarding@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1537413892801,"path":"onboarding@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"onboarding%40mozilla.org:1.0","version":"1.0"},"screenshots@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1537413892776,"path":"screenshots@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"screenshots%40mozilla.org:33.0.0","version":"33.0.0","startupData":{"persistentListeners":{"runtime":{"onMessage":[[]]}}}},"webcompat-reporter@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":false,"lastModifiedTime":1537413892736,"path":"webcompat-reporter@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"webcompat-reporter%40mozilla.org:1.0.0","version":"1.0.0"},"webcompat@mozilla.org":{"dependencies":[],"enabled":true,"hasEmbeddedWebExtension":true,"lastModifiedTime":1537413892726,"path":"webcompat@mozilla.org.xpi","runInSafeMode":true,"telemetryKey":"webcompat%40mozilla.org:2.0","version":"2.0"}},"staged":{},"path":"C:\\Program Files\\Mozilla Firefox\\browser\\features"}}
+1537496861973	addons.xpi	DEBUG	scanForChanges changed: false, state: {}
+1537496861975	addons.xpi	DEBUG	No changes found
+1537496862003	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\activity-stream@mozilla.org.xpi
+1537496862024	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\activity-stream@mozilla.org.xpi
+1537496862032	addons.xpi	DEBUG	Calling bootstrap method startup on activity-stream@mozilla.org version 2018.08.22.1219-93becf29
+1537496862035	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1537496862041	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1537496862046	addons.xpi	DEBUG	Calling bootstrap method startup on aushelper@mozilla.org version 2.0
+1537496862051	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1537496862063	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1537496862077	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1537496862099	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1537496862110	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1537496862114	addons.xpi	DEBUG	Calling bootstrap method startup on formautofill@mozilla.org version 1.0
+1537496862116	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\Ashwin\AppData\Local\Temp\rust_mozprofile.3wSAOOZWDVos\features\{79d86b69-9394-434e-b977-b86fdcf3c528}\fxmonitor@mozilla.org.xpi
+1537496862206	addons.xpi	DEBUG	Calling bootstrap method startup on fxmonitor@mozilla.org version 2.2
+1537496862211	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1537496862221	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1537496862228	addons.xpi	DEBUG	Calling bootstrap method startup on onboarding@mozilla.org version 1.0
+1537496862229	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1537496862245	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1537496862252	addons.xpi	DEBUG	Calling bootstrap method startup on screenshots@mozilla.org version 33.0.0
+1537496862254	addons.xpi	DEBUG	Registering manifest for C:\Users\Ashwin\AppData\Local\Temp\rust_mozprofile.3wSAOOZWDVos\extensions\search-nudges@shield.mozilla.org.xpi
+1537496862255	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\Ashwin\AppData\Local\Temp\rust_mozprofile.3wSAOOZWDVos\extensions\search-nudges@shield.mozilla.org.xpi
+1537496862271	addons.xpi	DEBUG	Calling bootstrap method startup on search-nudges@shield.mozilla.org version 1.8.2
+console.debug: 
+  startup
+  APP_STARTUP
+1537496862491	addons.xpi	DEBUG	Registering manifest for C:\Users\Ashwin\AppData\Local\Temp\rust_mozprofile.3wSAOOZWDVos\features\{79d86b69-9394-434e-b977-b86fdcf3c528}\telemetry-coverage-bug1487578@mozilla.org.xpi
+1537496862492	addons.xpi	DEBUG	Loading bootstrap scope from C:\Users\Ashwin\AppData\Local\Temp\rust_mozprofile.3wSAOOZWDVos\features\{79d86b69-9394-434e-b977-b86fdcf3c528}\telemetry-coverage-bug1487578@mozilla.org.xpi
+1537496862497	addons.xpi	DEBUG	Calling bootstrap method startup on telemetry-coverage-bug1487578@mozilla.org version 7.0
+1537496862499	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\webcompat-reporter@mozilla.org.xpi
+1537496862512	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\webcompat-reporter@mozilla.org.xpi
+1537496862515	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat-reporter@mozilla.org version 1.0.0
+1537496862519	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1537496862532	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1537496862540	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 2.0
+1537496862549	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1537496862549	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1537496862549	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1537496862549	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1537496862550	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1537496862551	addons.manager	DEBUG	Starting provider: GMPProvider
+1537496862559	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1537496862560	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1537496862560	addons.manager	DEBUG	Starting provider: PluginProvider
+1537496862560	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1537496862560	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1537496862565	addons.manager	DEBUG	Completed startup sequence
